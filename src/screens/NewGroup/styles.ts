@@ -6,6 +6,7 @@ export const ContainerNewGroup = styled.View`
     flex:1;
     background-color: ${theme.COLORS.GRAY_600};
     padding: 24px;
+   
     `}
 `;
 export const ContentNewGroup = styled.View`
