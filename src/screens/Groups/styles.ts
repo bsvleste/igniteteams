@@ -10,7 +10,7 @@ export const ContainerGroup = styled.View`
 export const Titulo = styled.Text`
     ${({theme})=>css`
     color: ${theme.COLORS.GRAY_100};
-    font-size: ${theme.FONT_SIZE.XL};
+    font-size: ${theme.FONT_SIZE.XL}px;
     font-family: ${theme.FONT_FAMILY.BOLD};
     `}
 `
