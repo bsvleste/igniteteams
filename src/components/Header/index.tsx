@@ -1,4 +1,4 @@
-import { BackButton, BackIcon, ContainerHeader, Logo } from "./styles";
+import * as S from "./styles";
 import logoImg from '@assets/logo.png'
 
 type PropsHeader = {
@@ -7,15 +7,15 @@ type PropsHeader = {
 
 export function Header({ showBackButton = false }: PropsHeader) {
   return (
-    <ContainerHeader>
+    <S.ContainerHeader>
       {
         showBackButton &&
-        <BackButton>
-          <BackIcon />
-        </BackButton>
+        <S.BackButton>
+          <S.BackIcon />
+        </S.BackButton>
       }
-      <Logo source={logoImg} />
-    </ContainerHeader>
+      <S.Logo source={logoImg} />
+    </S.ContainerHeader>
   )
 
 }

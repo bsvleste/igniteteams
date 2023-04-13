@@ -1,8 +1,8 @@
-import { ContainerLoading, LoadingIndicator } from "./styles";
+import * as S from "./styles";
 export function Loading() {
   return (
-    <ContainerLoading>
-      <LoadingIndicator />
-    </ContainerLoading>
+    <S.ContainerLoading>
+      <S.LoadingIndicator />
+    </S.ContainerLoading>
   )
 }

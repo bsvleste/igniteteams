@@ -1,4 +1,4 @@
-import { ContainerHighlight, SubTitle, Title } from "./styles";
+import * as S from "./styles";
 
 interface HighlightProps {
   title: string
@@ -7,9 +7,9 @@ interface HighlightProps {
 
 export function Highligh({ title, subTitle }: HighlightProps) {
   return (
-    <ContainerHighlight>
-      <Title>{title}</Title>
-      <SubTitle>{subTitle}</SubTitle>
-    </ContainerHighlight>
+    <S.ContainerHighlight>
+      <S.Title>{title}</S.Title>
+      <S.SubTitle>{subTitle}</S.SubTitle>
+    </S.ContainerHighlight>
   )
 }
