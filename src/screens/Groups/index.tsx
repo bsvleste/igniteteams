@@ -1,3 +1,4 @@
+import { Button } from '@components/Button';
 import { GroupCard } from '@components/GroupCard';
 import { Header } from '@components/Header';
 import { Highligh } from '@components/Highlight';
@@ -21,6 +22,7 @@ export function Group() {
         contentContainerStyle={groups.length === 0 && { flex: 1 }}
         ListEmptyComponent={<ListEmpty message="Sua lista esta vazia adicione seus amigos na lista" />}
       />
+      <Button title="Criar Times" />
     </S.ContainerGroup>
   );
 }
