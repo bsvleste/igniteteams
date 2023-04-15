@@ -1,4 +1,5 @@
 import { Button } from '@components/Button';
+import { Container } from '@components/Container';
 import { GroupCard } from '@components/GroupCard';
 import { Header } from '@components/Header';
 import { Highligh } from '@components/Highlight';
@@ -10,7 +11,7 @@ import * as S from './styles';
 export function Group() {
   const [groups, setGroups] = useState<string[]>([])
   return (
-    <S.ContainerGroup>
+    <Container>
       <Header />
       <Highligh title='Turmas' subTitle='jogue com seus amigos' />
       <FlatList
@@ -23,7 +24,7 @@ export function Group() {
         ListEmptyComponent={<ListEmpty message="Sua lista esta vazia adicione seus amigos na lista" />}
       />
       <Button title="Criar Times" />
-    </S.ContainerGroup>
+    </Container>
   );
 }
 
