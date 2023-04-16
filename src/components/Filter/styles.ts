@@ -8,7 +8,6 @@ export const ContainerFilter = styled(TouchableOpacity)<FilterStylesProps>`
   ${({theme,isActive})=>isActive && css`
     border: 1px solid ${theme.COLORS.GREEN_700}
   `};
-  margin-top:16px;
   border-radius:8px;
   margin-right: 12px;
   height:38px;
