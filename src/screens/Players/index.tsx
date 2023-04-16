@@ -4,6 +4,7 @@ import { Header } from "@components/Header";
 import { Highligh } from "@components/Highlight";
 import { Input } from "@components/Input";
 import * as S from "./styles";
+import { Filter } from "@components/Filter";
 
 export function Players() {
   return (
@@ -21,6 +22,10 @@ export function Players() {
         />
         <ButtonIcon icon="add" />
       </S.Form>
+      <Filter
+        title="Time A"
+
+      />
     </Container>
   )
 }
