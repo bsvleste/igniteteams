@@ -1,6 +1,5 @@
-import { NavigationContainer } from "@react-navigation/native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import { StatusBar } from "expo-status-bar";
-import { Groups } from "@screens/Groups";
 import { ThemeProvider } from "styled-components";
 import { Routes } from "@routes/index";
 import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto'

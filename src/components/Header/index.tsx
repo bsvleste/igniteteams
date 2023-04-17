@@ -1,6 +1,7 @@
 import { useNavigation } from '@react-navigation/native'
-import * as S from "./styles";
+import { TouchableOpacity } from 'react-native';
 import logoImg from '@assets/logo.png'
+import * as S from "./styles";
 
 type PropsHeader = {
   showBackButton?: boolean
@@ -8,6 +9,9 @@ type PropsHeader = {
 
 export function Header({ showBackButton = false }: PropsHeader) {
   const navigation = useNavigation()
+  function handleGoBackHome() {
+    navigation.navigate('groups')
+  }
   function handleGoBack() {
     navigation.goBack()
   }
@@ -19,7 +23,9 @@ export function Header({ showBackButton = false }: PropsHeader) {
           <S.BackIcon />
         </S.BackButton>
       }
-      <S.Logo source={logoImg} />
+      <TouchableOpacity onPress={handleGoBackHome}>
+        <S.Logo source={logoImg} />
+      </TouchableOpacity>
     </S.ContainerHeader>
   )
 
