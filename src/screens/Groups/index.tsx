@@ -23,6 +23,9 @@ export function Groups() {
       throw error
     }
   }
+  function handleOpenGroup(group: string) {
+    navigation.navigate("players", { group })
+  }
   useFocusEffect(useCallback(() => {
     fecthGroups()
   }, []))
@@ -34,7 +37,7 @@ export function Groups() {
         data={groups}
         keyExtractor={item => item}
         renderItem={({ item }) => (
-          <GroupCard title={item} />
+          <GroupCard title={item} onPress={() => handleOpenGroup(item)} />
         )}
         contentContainerStyle={groups.length === 0 && { flex: 1 }}
         ListEmptyComponent={<ListEmpty message="Sua lista esta vazia adicione seus amigos na lista" />}
